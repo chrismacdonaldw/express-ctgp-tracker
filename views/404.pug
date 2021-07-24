@@ -1,0 +1,23 @@
+extends layout 
+
+block content
+  #content-wrapper.d-flex.flex-column
+    #content
+      nav.navbar.navbar-light.navbar-expand.bg-white.shadow.mb-4.topbar.static-top
+        .container-fluid
+          button#sidebarToggleTop.btn.btn-link.d-md-none.rounded-circle.me-3(type='button')
+            i.fas.fa-bars
+      .container-fluid
+        .text-center.mt-5
+          .error.mx-auto(data-text='404')
+            p.m-0 404
+          p.text-dark.mb-5.lead Page Not Found
+          p.text-black-50.mb-0 #{config["error"]}
+          a(href='/') &larr; Back to Homepage
+    footer.bg-white.sticky-footer
+      .container.my-auto
+        .text-center.my-auto.copyright
+          span.span-hover(onclick=`location.href="https://github.com/chrismacdonaldw"`) Chris MacDonald @ GitHub
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js')
+  script(src='/javascript/script.min.js')

@@ -1,0 +1,19 @@
+extends layout 
+
+block content
+  #content-wrapper.d-flex.flex-column
+    #content
+      nav.navbar.navbar-light.navbar-expand.bg-white.shadow.mb-4.topbar.static-top
+        .container-fluid
+      .container-fluid
+        .text-center.mt-5
+          img.img-fluid(src='images/EZ.png', alt='EZ')
+          p.text-dark.mb-5.lead Check out the left bar.
+          p.text-black-50.mb-0 #{config["subtitle"]}
+    footer.bg-white.sticky-footer
+      .container.my-auto
+        .text-center.my-auto.copyright
+          span.span-hover(onclick=`location.href="https://github.com/chrismacdonaldw"`) Chris MacDonald @ GitHub
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js')
+  script(src='/javascript/script.min.js')

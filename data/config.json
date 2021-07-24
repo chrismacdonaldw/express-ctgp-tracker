@@ -1,0 +1,7 @@
+{
+    "icon": "fas fa-car-side",
+    "title": "CTGP Time Trials",
+    "header": "CTGP TT",
+    "error": "That route doesn't exist.",
+    "subtitle": "Add users via the config JSON."
+}
